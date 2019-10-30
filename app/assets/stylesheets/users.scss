@@ -4,3 +4,13 @@
 table, th, td {
   border: 1px solid black;
 }
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  background: linear-gradient(gray, #42474B);
+  transition: background 0.3s ease;
+  border: 1px solid gray;
+}
