@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   # leer tudos os usuarios
   get 'users', to: 'users#index'
-  # criar um novo usuario (2 requests)
+  # criar um novo usuario (2 requests):
+  # render the form new
   get 'users/new', to: 'users#new'
+  # enviar a info
   post 'users', to: 'users#create'
 
   # fazer o index a homepage
