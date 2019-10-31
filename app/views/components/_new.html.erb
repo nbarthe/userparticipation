@@ -1,6 +1,16 @@
-<%= simple_form_for @user do |f| %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :participation %>
-  <%= f.submit "Add" , class: "btn-gradient" %>
+
+
+<%= form_for(@user) do |f| %>
+ <div class="flexbox">
+    <div class="form-group">
+      <%= f.text_field :first_name, class: 'form-control', placeholder: "First name" %>
+    </div>
+    <div class="form-group">
+      <%= f.text_field :last_name, class: 'form-control', placeholder: "Last name" %>
+    </div>
+    <div class="form-group">
+      <%= f.text_field :participation, class: 'form-control', placeholder: "Participation" %>
+    </div>
+    <%= f.submit class: 'btn-gradient' %>
+  </div>
 <% end %>

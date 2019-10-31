@@ -1,0 +1,26 @@
+.flexbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form-group {
+  height: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #E7E7E7;
+}
+
+.form-group:focus {
+  border: 1px solid #ccc;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #4AB9E2;
+  transition: background 0.3s ease;
+  border: 1px solid white;
+}
