@@ -2,24 +2,34 @@
 <div class="container">
   <br>
   <%= render "components/new" %>
+  <div class="titles">
+    <br>
+    <h2>DATA</h2>
+    <br>
+      <p>Lorem ipsum dolor sit amet, ut sea corrumpit scribentur</p>
+    <br>
+  </div>
+  <div class="flexbox-users">
+    <div class="table-container">
+      <table class= "table">
+        <tr>
+          <th> </th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Participation</th>
+        </tr>
+          <% @users.each do |user| %>
+        <tr>
+          <td><%= user.id  %></td>
+          <td><%= user.first_name %></td>
+          <td><%= user.last_name %></td>
+          <td class= "participation"><%= user.participation %>%</td>
+        </tr>
+        <% end %>
+      </table>
+    </div>
 
-<div class="table">
-  <h2>DATA</h2>
-  <table style="width:100%">
-    <tr>
-      <th> </th>
-      <th>First name</th>
-      <th>Last name</th>
-      <th>Participation</th>
-    </tr>
-      <% @users.each do |user| %>
-    <tr>
-      <td><%= user.id  %></td>
-      <td><%= user.first_name %></td>
-      <td><%= user.last_name %></td>
-      <td><%= user.participation %>%</td>
-    </tr>
-    <% end %>
-  </table>
+    <%= pie_chart User.group(:participation).sum(:participation) %>
+  </div>
 </div>
-</div>
+
