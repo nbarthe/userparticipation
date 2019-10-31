@@ -1,16 +1,35 @@
+.container-flex {
+  background: #4AB9E2;
+  color: white;
+  height: 60px;
+}
+
+
 .flexbox {
+  margin-top: 30px;
+  background: #4AB9E2;
+  color: white;
+  margin-right: 100px;
+  margin-left: 100px;
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
+
+
 .form-group {
+  color: white;
   height: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  border: 1px solid #E7E7E7;
+}
+
+.form-control {
+  text-align: center;
+  height: 25px;
+  width: 200px;
 }
 
 .form-group:focus {
-  border: 1px solid #ccc;
   outline: none !important;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
