@@ -30,4 +30,4 @@ Then restart your Terminal again (close it and reopen it).
 ruby -v
 You should see something starting with ruby 2.6.3p
 
-*RUN rails db:seed
+*Dont forget to RUN rails db:seed
