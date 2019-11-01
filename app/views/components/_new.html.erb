@@ -3,13 +3,13 @@
   <%= form_for(@user) do |f| %>
    <div class="flexbox">
       <div class="form-group">
-        <%= f.text_field :first_name, class: 'form-control', placeholder: "First name" %>
+        <%= f.text_field :first_name, class: 'form-control', placeholder: "First name", required: true %>
       </div>
       <div class="form-group">
-        <%= f.text_field :last_name, class: 'form-control', placeholder: "Last name" %>
+        <%= f.text_field :last_name, class: 'form-control', placeholder: "Last name", required: true %>
       </div>
       <div class="form-group">
-        <%= f.text_field :participation, class: 'form-control', placeholder: "Participation" %>
+        <%= f.text_field :participation, class: 'form-control', placeholder: "Participation", required: true %>
       </div>
       <%= f.submit "SEND", class: 'btn-gradient' %>
     </div>

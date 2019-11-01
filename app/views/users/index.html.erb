@@ -28,8 +28,7 @@
         <% end %>
       </table>
     </div>
-
-    <%= pie_chart User.group(:participation).sum(:participation) %>
+    <%= pie_chart User.group(:first_name).sum(:participation), donut: true %>
   </div>
 </div>
 
