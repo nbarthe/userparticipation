@@ -30,4 +30,10 @@ Then restart your Terminal again (close it and reopen it).
 ruby -v
 You should see something starting with ruby 2.6.3p
 
-*Dont forget to RUN rails db:seed
+--RAILS---
+
+gem install rails -v 5.2
+
+------
+
+*Dont forget to RUN rails db:seed before rails s 
